@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <title>TensorIot</title>
+        <link rel="StyleSheet" href="style.css">
+        <!-- <script src="https://kit.fontawesome.com/48be085bc0.js" crossorigin="anonymous"></script> -->
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <scrpt src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" ></script>
+
+        <!-- <div class="container"> -->
+            <div class="form-box animate">
+                
+                    <form>
+                        
+                         <div class="input-group">
+                            
+                            <div class="title" style="margin-top: 10px;">
+                                <h1 id="htitle" style="font-size: 20px;">Register</h1>
+                            </div>
+                                
+
+                            <div class="disPic">
+
+                                <div class="userIcontainer">
+                                    <img src="userimg.png" class="userImg" width="70px"; height="70px" />
+                                </div>
+
+                                <div class="disPicContent">
+                                    Set Display Picture
+                                </div>
+
+                            </div>
+                            
+                            <div class="input-field email-input" id="emailField" >
+                                <!-- <i class="fa-solid fa-user"></i> -->
+                                <input type="email"  placeholder="Email">
+                            </div>
+                            <hr>
+
+                            <div class="input-field">
+                                <!-- <i class="fa-solid fa-lock"></i> -->
+                                <input type="password" placeholder="Password">
+                            </div>
+                            <hr>
+
+                            <div class="input-field">
+                                <!-- <i class="fa-solid fa-lock"></i> -->
+                                <input id="cpswd" type="password" placeholder="Confirm Password"><br>
+                            </div>
+                            <hr>
+
+                            <div class="input-field">
+                                <!-- <i class="fa-solid fa-person"></i> -->
+                                <input id="uname" type="text" placeholder="Username">
+                            </div>
+                            <hr>
+
+                            <div class="input-field">
+                                <!-- <i class="fa-brands fa-wpforms"></i> -->
+                                <input id="bio" type="text" placeholder="A short bio">
+                            </div>
+                            <hr><br><br><br>
+
+                         </div>
+
+                         <div class="btn1-field">
+                            <button type="button" id="signupBtn" onclick="window.location.href='thankYou.html';">SIGN UP</button>
+                         </div>
+
+                    </form>  
+
+                </div>
+        <!-- </div> -->
+
+        <!-- <script>
+            let signupBtn = document.getElementById("signupBtn");
+            let emailField = document.getElementById("emailField");
+
+            signupBtn.onclick = function(){
+                emailField.style.maxheight = "0";
+                title.innerHTML = "Register";
+                loginBtn.classList.add("disabled");
+                signupBtn.classList.remove("disabled");
+            }
+
+        </script> -->
+
+        <script>
+            $(document).ready(function(){
+            $('form').parsley();
+            });
+        </script>
+
+    </body>    
+
+</html>    
